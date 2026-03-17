@@ -2,6 +2,8 @@ const body = document.body;
 const menuToggle = document.querySelector('.menu-toggle');
 const navLinks = document.querySelectorAll('.site-nav a');
 const forms = document.querySelectorAll('.lead-form');
+const siteHeader = document.querySelector('.site-header');
+const progressBar = document.querySelector('.scroll-progress');
 
 const popup = document.getElementById('lead-popup');
 const popupTitle = document.getElementById('popup-title');
@@ -32,6 +34,15 @@ const popupMessages = {
 
 let inactivityTimer;
 let popupShown = false;
+
+function handleScrollEffects() {
+  const scrollTop = window.scrollY;
+  const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+  const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+
+  if (progressBar) progressBar.style.width = `${Math.min(progress, 100)}%`;
+  if (siteHeader) siteHeader.classList.toggle('scrolled', scrollTop > 24);
+}
 
 function setPopupContent(trigger) {
   const message = popupMessages[trigger] ?? popupMessages.time_on_page;
@@ -139,9 +150,7 @@ if (lightbox && lightboxImage) {
       event.clientY < bounds.top ||
       event.clientY > bounds.bottom;
 
-    if (isOutside) {
-      lightbox.close();
-    }
+    if (isOutside) lightbox.close();
   });
 }
 
@@ -185,3 +194,6 @@ if (popup) {
   const condicoesSection = document.getElementById('condicoes');
   if (condicoesSection) observer.observe(condicoesSection);
 }
+
+window.addEventListener('scroll', handleScrollEffects, { passive: true });
+handleScrollEffects();

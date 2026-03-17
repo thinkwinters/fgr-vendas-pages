@@ -6,7 +6,7 @@
     <title>Jardins Berlim | FGR — Mude Agora</title>
     <meta
       name="description"
-      content="Jardins Berlim | FGR em fase de entrega para viver agora. Receba opções e localização no WhatsApp com atendimento rápido."
+      content="Jardins Berlim | FGR: condomínio em fase de entrega para viver agora, com lazer, segurança e atendimento especializado no WhatsApp."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,9 +17,11 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="scroll-progress" aria-hidden="true"></div>
+
     <header class="site-header" id="topo">
       <div class="container header-inner">
-        <a href="#topo" class="brand" aria-label="Jardins Berlim FGR">Jardins Berlim <span>| FGR</span></a>
+        <a href="#topo" class="brand">Jardins Berlim <span>| FGR</span></a>
         <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
         <nav class="site-nav" aria-label="Menu principal">
           <a href="#sobre">Sobre</a>
@@ -34,55 +36,58 @@
     </header>
 
     <main>
-      <section class="hero" id="sobre" aria-label="Destaque Jardins Berlim">
-        <img src="/images/berlim-hero.jpg" alt="Vista aérea do Jardins Berlim" class="hero-bg" loading="eager" />
+      <section class="hero" id="sobre">
+        <img src="/images/berlim-hero.jpg" alt="Vista do Jardins Berlim" class="hero-bg" loading="eager" />
         <div class="hero-overlay"></div>
 
         <div class="container hero-grid">
           <div class="hero-copy">
-            <p class="eyebrow">Fase de entrega e vistoria • decisão para morar agora</p>
-            <h1>Jardins Berlim: viva agora, sem esperar obra.</h1>
+            <p class="eyebrow">Empreendimento em fase de entrega para mudança imediata</p>
+            <h1>Jardins Berlim: o momento de mudar é agora.</h1>
             <p class="hero-subheadline">
-              Condomínio fechado com lazer, segurança 24h e padrão FGR para quem quer sair do plano e entrar na rotina pronta.
+              Viva o padrão FGR em um condomínio com lazer, segurança e casas prontas para virar rotina — sem esperar anos por obra.
             </p>
 
-            <ul class="hero-benefits" aria-label="Benefícios principais">
-              <li>Condomínio fechado com acesso controlado</li>
-              <li>Lazer completo para a família</li>
-              <li>Segurança 24h e ambiente consolidado</li>
+            <ul class="hero-benefits">
+              <li>Condomínio fechado</li>
+              <li>Lazer completo</li>
+              <li>Segurança 24h</li>
+              <li>Padrão FGR</li>
+              <li>Pronto para viver</li>
             </ul>
 
-            <div class="hero-actions">
-              <a class="btn btn-primary" href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer"
-                >Receber opções no WhatsApp</a
-              >
-              <a class="btn btn-outline-light" href="#contato">Falar com especialista</a>
+            <div class="headline-variants">
+              <small>Variações de headline para campanha:</small>
+              <p>Seu novo capítulo começa no Jardins Berlim — sem espera.</p>
             </div>
 
-            <div class="trust-strip" aria-label="Sinais de confiança">
-              <span>Padrão Jardins</span>
-              <span>Atendimento consultivo</span>
-              <span>Foco em mudança imediata</span>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer">Receber opções no WhatsApp</a>
+              <a class="btn btn-outline-light" href="#contato">Falar com especialista</a>
             </div>
           </div>
 
-          <form class="lead-form" id="hero-form" novalidate>
-            <h2>Receba disponibilidade atual</h2>
-            <p class="form-intro">Preencha e receba no WhatsApp localização, opções e próximos passos.</p>
-
+          <form class="lead-form elevated" id="hero-form" novalidate>
+            <h2>Receba opções para mudar agora</h2>
+            <p class="form-intro">Atendimento consultivo com localização, disponibilidade e próximos passos.</p>
             <label for="nome">Nome</label>
             <input id="nome" name="nome" type="text" autocomplete="name" required />
-
             <label for="telefone">Telefone</label>
             <input id="telefone" name="telefone" type="tel" inputmode="numeric" autocomplete="tel" required />
-
             <label for="email">E-mail</label>
             <input id="email" name="email" type="email" autocomplete="email" required />
-
             <button type="submit" class="btn btn-primary btn-block">Quero receber opções no WhatsApp</button>
-            <p class="microcopy">Seus dados são protegidos. Atendimento por especialista FGR em horário comercial.</p>
+            <p class="microcopy">Ao enviar, você concorda em receber contato de um especialista FGR. Seus dados estão protegidos.</p>
             <p class="form-message" role="status" aria-live="polite"></p>
           </form>
+        </div>
+      </section>
+
+      <section class="quick-proof">
+        <div class="container proof-grid">
+          <article><strong>Fase de entrega</strong><span>Foco em ocupação e vistoria</span></article>
+          <article><strong>Região GO-020</strong><span>Conexão rápida com Goiânia</span></article>
+          <article><strong>Padrão Jardins</strong><span>Qualidade reconhecida FGR</span></article>
         </div>
       </section>
 
@@ -90,24 +95,24 @@
         <div class="container narrow">
           <h2>Por que esta página existe?</h2>
           <p>
-            Para famílias que querem trocar espera por rotina. Para quem busca condomínio fechado sem aguardar lançamento. E para
-            quem valoriza qualidade de vida com acesso rápido à região nobre de Goiânia.
+            Para quem quer sair do plano e entrar no agora. Para quem quer morar em condomínio fechado sem esperar nova obra. E para
+            quem busca qualidade de vida com acesso rápido à região nobre de Goiânia.
           </p>
         </div>
       </section>
 
       <section class="section" id="diferenciais">
         <div class="container">
-          <h2>Diferenciais que reduzem dúvida e aceleram decisão</h2>
+          <h2>Diferenciais que aceleram a decisão</h2>
           <div class="cards-grid">
-            <article class="card"><h3>Segurança 24h</h3><p>Mais tranquilidade para viver, circular e receber.</p></article>
-            <article class="card"><h3>Acesso controlado</h3><p>Portaria e controle de entrada para uma rotina protegida.</p></article>
-            <article class="card"><h3>Ambiente familiar</h3><p>Convivência equilibrada para diferentes fases da vida.</p></article>
-            <article class="card"><h3>Lazer completo</h3><p>Mais tempo de qualidade no próprio condomínio.</p></article>
-            <article class="card"><h3>Padrão construtivo FGR</h3><p>Confiança de marca e consistência de entrega.</p></article>
-            <article class="card"><h3>Natureza ao redor</h3><p>Áreas verdes e paisagismo para uma experiência mais leve.</p></article>
-            <article class="card"><h3>Localização estratégica</h3><p>Senador Canedo, região GO-020, com fluidez de acesso.</p></article>
-            <article class="card"><h3>Condomínio consolidado</h3><p>Sensação real de pertencimento desde o primeiro dia.</p></article>
+            <article class="card icon"><h3>Segurança 24h</h3><p>Rotina com tranquilidade em todos os períodos.</p></article>
+            <article class="card icon"><h3>Acesso controlado</h3><p>Entrada monitorada para mais previsibilidade.</p></article>
+            <article class="card icon"><h3>Ambiente familiar</h3><p>Convivência segura e acolhedora.</p></article>
+            <article class="card icon"><h3>Lazer completo</h3><p>Estrutura para viver melhor sem deslocar.</p></article>
+            <article class="card icon"><h3>Padrão construtivo FGR</h3><p>Qualidade e legado da marca Jardins.</p></article>
+            <article class="card icon"><h3>Natureza ao redor</h3><p>Paisagem e bem-estar no cotidiano.</p></article>
+            <article class="card icon"><h3>Localização estratégica</h3><p>Senador Canedo, região GO-020.</p></article>
+            <article class="card icon"><h3>Condomínio consolidado</h3><p>Sensação real de vida acontecendo.</p></article>
           </div>
         </div>
       </section>
@@ -116,41 +121,27 @@
         <div class="container editorial-grid">
           <div>
             <p class="eyebrow">Jeito Jardins de viver</p>
-            <h2>Quando a casa acompanha seu ritmo, a vida flui melhor.</h2>
+            <h2>Uma rotina que combina tranquilidade, pertencimento e qualidade de vida.</h2>
             <p>
-              O Jardins Berlim entrega um cenário em que segurança, natureza e lazer deixam de ser plano futuro e viram parte da
-              agenda da semana.
+              No Jardins Berlim, morar ganha ritmo: segurança para a família, lazer perto de casa e a natureza como parte da sua
+              paisagem diária.
             </p>
-            <p>
-              É a escolha de quem busca conforto com critério: localização estratégica, ambiente familiar e padrão reconhecido.
-            </p>
+            <p>É sobre entrar agora em um endereço com assinatura FGR e vida pronta para começar.</p>
           </div>
           <div class="editorial-image-wrap">
-            <img src="/images/berlim-casa.jpg" alt="Família em casa no condomínio" loading="lazy" />
+            <img src="/images/berlim-casa.jpg" alt="Família em rotina no condomínio" loading="lazy" />
           </div>
         </div>
       </section>
 
-      <section class="section" aria-label="Galeria Jardins Berlim">
+      <section class="section">
         <div class="container">
-          <h2>Veja o estilo de vida do Jardins Berlim</h2>
+          <h2>Galeria Jardins Berlim</h2>
           <div class="mosaic-grid">
-            <figure class="mosaic-item" data-lightbox="/images/berlim-portaria.jpg">
-              <img src="/images/berlim-portaria.jpg" alt="Portaria e controle de acesso" loading="lazy" />
-              <figcaption>Segurança e chegada com tranquilidade</figcaption>
-            </figure>
-            <figure class="mosaic-item" data-lightbox="/images/berlim-lazer.jpg">
-              <img src="/images/berlim-lazer.jpg" alt="Área de lazer do Jardins Berlim" loading="lazy" />
-              <figcaption>Lazer para a rotina da família</figcaption>
-            </figure>
-            <figure class="mosaic-item" data-lightbox="/images/berlim-piscina.jpg">
-              <img src="/images/berlim-piscina.jpg" alt="Piscina do condomínio" loading="lazy" />
-              <figcaption>Bem-estar e tempo de qualidade</figcaption>
-            </figure>
-            <figure class="mosaic-item" data-lightbox="/images/berlim-casa.jpg">
-              <img src="/images/berlim-casa.jpg" alt="Casas no Jardins Berlim" loading="lazy" />
-              <figcaption>Casas prontas para começar uma nova fase</figcaption>
-            </figure>
+            <figure class="mosaic-item" data-lightbox="/images/berlim-lazer.jpg"><img src="/images/berlim-lazer.jpg" alt="Lazer" loading="lazy" /><figcaption>Lazer e convivência</figcaption></figure>
+            <figure class="mosaic-item" data-lightbox="/images/berlim-portaria.jpg"><img src="/images/berlim-portaria.jpg" alt="Portaria" loading="lazy" /><figcaption>Portaria e segurança</figcaption></figure>
+            <figure class="mosaic-item" data-lightbox="/images/berlim-piscina.jpg"><img src="/images/berlim-piscina.jpg" alt="Piscina" loading="lazy" /><figcaption>Bem-estar diário</figcaption></figure>
+            <figure class="mosaic-item" data-lightbox="/images/berlim-casa.jpg"><img src="/images/berlim-casa.jpg" alt="Casas" loading="lazy" /><figcaption>Casas para viver agora</figcaption></figure>
           </div>
         </div>
       </section>
@@ -159,12 +150,12 @@
         <div class="container">
           <h2>Lazer e vida prática no mesmo endereço</h2>
           <div class="pillars">
-            <article class="pillar"><h3>Piscina</h3><p>Momentos de descanso e convivência para toda a família.</p></article>
-            <article class="pillar"><h3>Quadras</h3><p>Mais esporte e movimento sem depender de deslocamentos.</p></article>
-            <article class="pillar"><h3>Áreas verdes</h3><p>Contato diário com a natureza e paisagem planejada.</p></article>
-            <article class="pillar"><h3>Convivência</h3><p>Espaços que favorecem encontros e boas memórias.</p></article>
-            <article class="pillar"><h3>Estrutura familiar</h3><p>Comodidade para viver com segurança e previsibilidade.</p></article>
-            <article class="pillar"><h3>Bem-estar</h3><p>Condomínio pensado para uma vida equilibrada.</p></article>
+            <article class="pillar"><h3>Piscina</h3><p>Descanso e lazer para todas as fases da vida.</p></article>
+            <article class="pillar"><h3>Quadras</h3><p>Mais movimento em uma rotina equilibrada.</p></article>
+            <article class="pillar"><h3>Áreas verdes</h3><p>Contato diário com a natureza.</p></article>
+            <article class="pillar"><h3>Convivência</h3><p>Espaços para encontros e conexões.</p></article>
+            <article class="pillar"><h3>Estrutura familiar</h3><p>Ambiente planejado para conforto cotidiano.</p></article>
+            <article class="pillar"><h3>Bem-estar</h3><p>Vida mais leve em condomínio completo.</p></article>
           </div>
         </div>
       </section>
@@ -172,18 +163,13 @@
       <section class="section location" id="localizacao">
         <div class="container location-grid">
           <div>
-            <h2>Localização inteligente para quem vive Goiânia por completo</h2>
-            <p>
-              Em Senador Canedo, na região da GO-020, com proximidade estratégica do Flamboyant e conexão rápida à região nobre de
-              Goiânia.
-            </p>
-            <a class="btn btn-primary" href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer"
-              >Quero receber a localização no WhatsApp</a
-            >
+            <h2>Localização que aproxima sua rotina do que importa</h2>
+            <p>Senador Canedo, região GO-020, com proximidade estratégica do Flamboyant e acesso à região nobre de Goiânia.</p>
+            <a class="btn btn-primary" href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer">Quero receber a localização no WhatsApp</a>
           </div>
-          <div class="map-placeholder" role="img" aria-label="Mapa de localização do Jardins Berlim">
+          <div class="map-placeholder" role="img" aria-label="Mapa da região GO-020 em Senador Canedo">
             <p>Placeholder de mapa</p>
-            <small>Substitua por embed de mapa ou imagem final da localização.</small>
+            <small>Substitua por embed do Google Maps ou imagem estática.</small>
           </div>
         </div>
       </section>
@@ -191,47 +177,23 @@
       <section class="section compare">
         <div class="container">
           <h2>Mudar agora vs esperar</h2>
-          <div class="compare-grid">
+          <div class="compare-timeline">
             <article class="compare-card muted">
               <h3>Esperar lançamento / obra</h3>
-              <ul>
-                <li>Anos até começar uma nova rotina</li>
-                <li>Dependência de cronograma futuro</li>
-                <li>Planejamento familiar em suspenso</li>
-                <li>Decisão importante adiada</li>
-              </ul>
+              <ul><li>Anos de espera</li><li>Incerteza de entrega</li><li>Sonho distante</li></ul>
             </article>
             <article class="compare-card highlight">
               <h3>Mudar para o Jardins Berlim</h3>
-              <ul>
-                <li>Decisão com foco em ocupação imediata</li>
-                <li>Empreendimento em fase de entrega e vistoria</li>
-                <li>Condomínio já com sensação de vida estabelecida</li>
-                <li>Próximo passo claro: falar com especialista</li>
-              </ul>
+              <ul><li>Decisão imediata</li><li>Fase de entrega / vistoria</li><li>Rotina pronta para começar</li></ul>
             </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section objections">
-        <div class="container narrow">
-          <h2>Perguntas comuns antes de decidir</h2>
-          <div class="faq-lite">
-            <p><strong>“Consigo atendimento rápido?”</strong> Sim, retorno consultivo com especialista em horário comercial.</p>
-            <p><strong>“Posso receber localização e opções sem compromisso?”</strong> Sim, enviamos tudo pelo WhatsApp.</p>
-            <p><strong>“Como entender as condições atuais?”</strong> No contato, você recebe disponibilidade e orientação atualizada.</p>
           </div>
         </div>
       </section>
 
       <section class="section" id="condicoes">
         <div class="container narrow">
-          <h2>Condições e facilidades</h2>
-          <p>
-            Consulte disponibilidade, condições atuais e opções de atendimento com um especialista. Sem promessas genéricas — apenas
-            orientação objetiva para você decidir com segurança.
-          </p>
+          <h2>Condições e atendimento</h2>
+          <p>Consulte disponibilidade, condições atuais e opções de atendimento com um especialista.</p>
           <a class="btn btn-primary" href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer">Falar com especialista no WhatsApp</a>
         </div>
       </section>
@@ -249,26 +211,18 @@
       <section class="section" id="contato">
         <div class="container contact-wrap">
           <div>
-            <p class="eyebrow">Atendimento comercial</p>
-            <h2>Solicite agora seu atendimento prioritário</h2>
-            <p>Preencha os dados para receber opções, localização e suporte para decidir com segurança.</p>
+            <p class="eyebrow">Atendimento rápido</p>
+            <h2>Agende seu próximo passo para morar no Jardins Berlim</h2>
+            <p>Preencha os dados e nossa equipe entra em contato para apresentar opções compatíveis com seu momento.</p>
           </div>
-
           <form class="lead-form" id="final-form" novalidate>
             <label for="nome-final">Nome</label>
             <input id="nome-final" name="nome" type="text" autocomplete="name" required />
-
             <label for="telefone-final">Telefone</label>
             <input id="telefone-final" name="telefone" type="tel" inputmode="numeric" autocomplete="tel" required />
-
             <label for="email-final">E-mail</label>
             <input id="email-final" name="email" type="email" autocomplete="email" required />
-
-            <label class="checkbox">
-              <input type="checkbox" required />
-              <span>Li e aceito a política de privacidade e o contato comercial.</span>
-            </label>
-
+            <label class="checkbox"><input type="checkbox" required /><span>Li e aceito a política de privacidade e o contato comercial.</span></label>
             <button type="submit" class="btn btn-primary btn-block">Quero atendimento prioritário</button>
             <p class="form-message" role="status" aria-live="polite"></p>
           </form>
@@ -276,14 +230,7 @@
       </section>
     </main>
 
-    <a
-      href="https://wa.me/5500000000000"
-      class="whatsapp-sticky"
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="Abrir conversa com especialista no WhatsApp"
-      >Fale com especialista</a
-    >
+    <a href="https://wa.me/5500000000000" class="whatsapp-sticky" target="_blank" rel="noopener noreferrer">Fale com especialista</a>
 
     <dialog id="lightbox" class="lightbox">
       <button class="lightbox-close" aria-label="Fechar imagem">×</button>
